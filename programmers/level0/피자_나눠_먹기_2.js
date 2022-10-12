@@ -1,4 +1,3 @@
-// 최대 공약수 구하기 알고리즘
 function gcd(x, y) {
   var r = 1;
   if (x % y === 0) {
@@ -12,3 +11,12 @@ function gcd(x, y) {
     return r;
   }
 }
+
+function solution(n) {
+  var answer = n / gcd(n, 6);
+  return answer;
+}
+
+console.log(solution(6)); // 1
+console.log(solution(10)); // 5
+console.log(solution(4)); // 2
