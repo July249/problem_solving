@@ -2,17 +2,16 @@ function solution(before, after) {
   let answer = 0;
   const beforeArr = before.split('');
   const afterArr = after.split('');
+  let filterArr = new Array(after.length);
+  let indexArr = [];
 
-  if (beforeArr.length !== afterArr.length) {
+  if (before.length !== after.length) {
     return answer;
   } else {
-    before.forEach((val) => {
-      for (let i in afterArr) {
-      }
-    });
+    beforeArr.forEach((val) => {});
   }
 
-  return answer;
+  return filterArr;
 }
 
 console.log(solution('olleh', 'hello')); // 1
