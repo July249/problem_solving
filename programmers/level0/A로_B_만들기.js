@@ -1,17 +1,9 @@
 function solution(before, after) {
-  let answer = 0;
-  const beforeArr = before.split('');
-  const afterArr = after.split('');
-  let filterArr = new Array(after.length);
-  let indexArr = [];
-
-  if (before.length !== after.length) {
-    return answer;
-  } else {
-    beforeArr.forEach((val) => {});
-  }
-
-  return filterArr;
+  before = [...before].sort();
+  after = [...after].sort();
+  return before.filter((val, idx) => val === after[idx]).length === after.length
+    ? 1
+    : 0;
 }
 
 console.log(solution('olleh', 'hello')); // 1
