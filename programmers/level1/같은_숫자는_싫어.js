@@ -47,7 +47,7 @@ i   arr[i - 1]      arr[i]              condition (arr[i - 1] !== arr[i])     re
 // Stack은 LIFO(Last In First Out)의 특징을 가진 선형 자료구조입니다.
 // 바닥이 막힌 상자를 생각하면 개념을 연상하기 쉽습니다.
 // 여기서는 연결리스트(linked list)를 이용하여 구현하였습니다.
-class Node {
+/* class Node {
   constructor(value) {
     // 생성자에 value 객체 생성하고 해당 객체는 value를 가지게 설정
     this.value = value;
@@ -115,6 +115,11 @@ function solution(arr) {
   }
 
   return answer;
+} */
+
+// 방법4
+function solution(arr) {
+  return arr.filter((val, index) => val != arr[index + 1]);
 }
 
 // 시도는 하였으나 올바르지 않은 방법들
