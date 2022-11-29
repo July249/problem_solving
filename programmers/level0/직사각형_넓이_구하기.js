@@ -1,6 +1,7 @@
 function solution(dots) {
   for ([i, j] of dots) {
-    console.log([i, j]);
+    // console.log([i, j]);
+    
   }
 }
 
