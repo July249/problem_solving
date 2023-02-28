@@ -4,7 +4,6 @@ arr = []
 for b in range(N):
     arr.append(str(b + 1))
 
-print(arr)
 t = 0
 while t < M:
     i, j = map(int, input().split())
