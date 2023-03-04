@@ -11,13 +11,10 @@ while True:
         row = list(map(int, input().split()))
         max_in_row = max(row)
 
-        
         if max_in_row > max_value:
             max_value = max_in_row       
             row_index = row_count
             col_index = row.index(max_in_row) + 1
-            
-        print(max_in_row, max_value)
 
     except:
         break
