@@ -23,4 +23,7 @@ while M > 0:
     
     M -= 1
 
-print(arr)
+for i in range(len(arr)):
+    arr[i] = str(arr[i])
+
+print(' '.join(arr))
