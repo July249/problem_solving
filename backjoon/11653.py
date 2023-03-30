@@ -27,6 +27,7 @@
 
 # 아래의 코드는 시간초과가 발생하지 않는다.
 # (출처: https://codinghani.tistory.com/5)
+
 N = int(input())
 
 if N == 1:
